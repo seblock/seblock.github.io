@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+
+
+/*
+    Filename:   styles.css
+    Author:     Sarah Block
+    Date:       2/12/2021 
+*/
+
+
+/* HTML and Body */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: rgb(254, 229, 224);
+    background: linear-gradient(90deg, rgba(254, 229, 224, 1) 0%, rgba(252, 154, 176, 1) 38%, rgba(244, 225, 233, 1) 86%);
+}
+
+body {
+    font-family: Arial;
+    color: #2E151B;
+    padding: 10px;
+    background: transparent;
+}
+
+
+
+/* Hyperlink Styles */
+/* unvisited link */
+a:link {
+    color: rgb(252, 154, 176);
+    text-decoration: underline;
+}
+
+/* visited link */
+a:visited {
+    color: rgb(252, 154, 176);
+    text-decoration: underline;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+    text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+    color: mediumvioletred;
+    text-decoration: underline;
+}
+
+
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #2E151B;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    background-color: #BAA2A8;
+    color: #2E151B;
+}
+
+
+/* Fake image */
+.fakeimg {
+    background-color: #BAA2A8;
+    width: 100%;
+    padding: 20px;
+}
+
+
+/* Left column */
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+/* Left column images */
+.leftcolumn img {
+    float: left;
+    max-width: 25%;
+    height: auto;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background: transparent;
+    padding-left: 20px;
+}
+
+
+/* Add a card effect for articles */
+.card {
+    float: inherit;
+    background-color: white;
+    padding: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+
+.card2 {
+    background-color: white;
+    padding: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #2E151B;
+    color: white;
+    margin-top: 20px;
+}
+
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+
+
+/* Unordered list, bullets inside */
+ul {
+    list-style-position: inside;
+}

@@ -1,55 +1,73 @@
 <!docutype html>
-<html lang="en">
-<html>
+    <html lang="en">
+    <html>
 
 <head>
-  
-   <!--
-    Filename: index.html
-    Author: Sarah Block
-    Date:   1/29/2021 
+    <!--
+    Filename:   index.html
+    Author:     Sarah Block
+    Date:       2/12/2021 
     -->
     <meta charset="utf-8" />
     <meta name="keywords" content="Sarah, Block, Resume, Portfolio" />
     <title>Sarah Block</title>
-  
+    <link href="styles.css" rel="stylesheet" />
 </head>
 
 <body>
-  
-  <header>
-    
-    <h1> Sarah Block </h1>
-         <nav>
-            <ul>
-                <li><a href="index.html">About Me</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="index.html">Projects</a></li>
-                <li><a href="index.html">Contact</a></li>
-            </ul>
-        </nav>
-  
-  </header>
-  
-  <article>
-    
-    <h1>About Me</h1>
-        <h2>Greetings!</h2>
-          <p>My name is Sarah Block, and I am a student studying software development at Northcentral Technical College.</p>
-          <p>As someone who grew up surrounded by technology, I have always been interested in learning about how the devices and programs we use every day are created and maintained. In the future, I hope to be someone who is able to create these programs. 
-          If you are interested in learning more about my work experience please check out my resume, and if you would like to see what I have been working on recently check out my projects page.</p> 
+    <div class="header">
+        <h1>Sarah Block</h1>
+        <p>Software Developer &#8226; Graphic Designer</p>
+    </div>
 
-  </article>
-  
-  <footer>
-                <a href="index.html">About Me</a> &#8226;
-                <a href="index.html">Resume</a> &#8226;
-                <a href="index.html">Projects</a> &#8226;
-                <a href="index.html">Contact</a> <br />
-                
-                <small>&copy; Copyright <script>document.write(new Date().getFullYear())</script>, Sarah Block &#8226; All Rights Reserved </small> 
-  </footer>
-  
-</body>
+    <div class="topnav">
+        <a href="index.html">About Me</a>
+        <a href="resume.html">Resume</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
 
-</html>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Learn about me</h2>
+                <h5>By Sarah Block, Posted Feb. 12, 2021</h5>
+
+                <img src="Face.png" alt="Face" />
+
+                <p>My name is Sarah Block, and I am a student studying software development at Northcentral Technical College.</p>
+                <p>As someone who grew up surrounded by technology, I have always been interested in learning about how the devices and programs we use every day are created and maintained. In the future, I hope to be someone who is able to create these programs.</p>
+                <ul>
+                    <b>Interested in learning more about my work experience?</b>
+                    <li>Please check out my <a href="resume.html">Resume</a></li>
+                    <br>
+                    <b>Would you like to see what I have been working on?</b>
+                    <li>Please check out my <a href="projects.html">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="rightcolumn">
+            <div class="card2">
+                <h2>Resume Highlight</h2>
+                <div class="fakeimg" style="height:100px;">Image</div>
+                <p>List/graph of most proficent skills</p>
+            </div>
+            <div class="card2">
+                <h2>Project Highlight</h2>
+                <div class="fakeimg" style="height:50px;">Image</div>
+                <p>Most impressive project here</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <small>
+            &copy; Copyright <script>
+                document.write(new Date().getFullYear())
+            </script> &#8226; Sarah Block &#8226; All Rights Reserved
+        </small>
+    </div>
+
+
+</body></html>
