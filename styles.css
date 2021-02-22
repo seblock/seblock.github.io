@@ -1,149 +1,252 @@
 @charset "utf-8";
 
-
-
 /*
-    Filename:   styles.css
-    Author:     Sarah Block
-    Date:       2/12/2021 
+    Filename:         styles.css
+    Author:           Sarah Block
+    Start Date:       2/15/2021 
+    Last Update Date: 2/21/2021
 */
 
 
-/* HTML and Body */
+
+/* All */
 * {
     box-sizing: border-box;
 }
 
-html {
-    background: rgb(254, 229, 224);
-    background: linear-gradient(90deg, rgba(254, 229, 224, 1) 0%, rgba(252, 154, 176, 1) 38%, rgba(244, 225, 233, 1) 86%);
+
+
+/* HTML */
+.wrapper {
+    display: inline-block;
+    background-color: #F0EAEC;
 }
 
-body {
-    font-family: Arial;
-    color: #2E151B;
-    padding: 10px;
+
+
+/* Body */
+.wrapperT {
+    margin: 0% 10%;
+    padding: 1% 10%;
+    font-family: "acumin-pro", Arial, sans-serif;
+    font-style: normal;
+    color: black;
     background: transparent;
 }
 
-
-
-/* Hyperlink Styles */
-/* unvisited link */
-a:link {
-    color: rgb(252, 154, 176);
-    text-decoration: underline;
+.wrapperT h1,
+.wrapperP h1 {
+    font-size: 1.8em;
+    color: #93354E;
+    font-weight: normal;
 }
 
-/* visited link */
-a:visited {
-    color: rgb(252, 154, 176);
-    text-decoration: underline;
+.wrapperP {
+    margin: 0% 10%;
+    padding: 1% 10%;
+    font-family: "acumin-pro", Arial, sans-serif;
+    font-style: normal;
+    color: black;
+    background: transparent;
 }
 
-/* mouse over link */
-a:hover {
-    color: hotpink;
-    text-decoration: underline;
+.wrapperG {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(240, 234, 236, 1) 100%);
 }
 
-/* selected link */
-a:active {
-    color: mediumvioletred;
-    text-decoration: underline;
-}
-
-
-
-/* Header/Blog Title */
-.header {
-    padding: 30px;
-    text-align: center;
+.wrapperW {
     background: white;
 }
 
-.header h1 {
-    font-size: 50px;
+.wrapperTT {
+    margin: 0% 10%;
+    font-family: "acumin-pro", Arial, sans-serif;
+    font-style: normal;
+    background: transparent;
 }
 
 
 
-/* Style the top navigation bar */
+
+/* Clearfix */
+.row a::before,
+.row a::after {
+    content: "";
+    display: table;
+    clear: both;
+    display: none;
+}
+
+
+
+
+
+/* Header*/
+.header {
+    text-align: center;
+    background: transparent;
+    position: relative;
+    left: auto;
+    right: auto;
+}
+
+.header img.name {
+    display: inline-block;
+    max-width: 25em;
+    height: auto;
+    border-bottom: 1px solid black;
+}
+
+
+
+
+
+/* Navigation Bar */
+.nav {
+    position: sticky;
+    top: 0;
+    max-width: 100%;
+    z-index: 1;
+}
+
 .topnav {
+    padding: 10px;
+    text-align: center;
     overflow: hidden;
-    background-color: #2E151B;
+    background-color: transparent;
 }
 
-/* Style the topnav links */
 .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
+    display: inline-block;
+    color: black;
+    background-color: #F0EAEC;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
-/* Change color on hover */
 .topnav a:hover {
-    background-color: #ddd;
-    background-color: #BAA2A8;
-    color: #2E151B;
+    color: #C1B2B6;
 }
 
 
-/* Fake image */
-.fakeimg {
-    background-color: #BAA2A8;
-    width: 100%;
-    padding: 20px;
-}
 
 
-/* Left column */
-.leftcolumn {
-    float: left;
-    width: 75%;
-}
 
-/* Left column images */
-.leftcolumn img {
-    float: left;
-    max-width: 25%;
-    height: auto;
-    padding: 20px;
-    padding-top: 0px;
-}
-
-/* Right column */
-.rightcolumn {
-    float: left;
-    width: 25%;
+/* Page - Row */
+.row {
     background: transparent;
-    padding-left: 20px;
+}
+
+.projects h1,
+.row#con h1 {
+    text-align: center;
+}
+
+.row hr {
+    margin: 5% 0%;
+    border-bottom: 1px solid;
+    border-color: #93354E;
+    opacity: 0.15;
 }
 
 
-/* Add a card effect for articles */
-.card {
-    float: inherit;
-    background-color: white;
-    padding: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 20px;
+
+
+
+
+
+
+/* Page - About */
+.about {
+    text-align: left;
 }
 
-.card2 {
-    background-color: white;
-    padding: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 20px;
+.about p img {
+    float: left;
+    max-width: 18em;
+    height: auto;
+    margin: 20px;
 }
 
-/* Clear floats after the columns */
-.row:after {
+
+
+
+
+
+
+/* Page - Resume, Download button */
+.button {
+    text-align: center;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.button a {
+    display: inline-block;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #93354E;
+    color: white;
+}
+
+.button a:hover,
+.button a:active {
+    background-color: #d47a92;
+    color: white;
+}
+
+
+
+/* Page - Resume */
+.resume {
+    display: inline-block;
+    max-width: 100%;
+    text-align: left;
+}
+
+.resume h2 {
+    text-align: left;
+    font-size: 1.1em;
+    color: #93354E;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.re-sec {
+    display: inline-block;
+}
+
+.re-item {
+    display: inline-block;
+}
+
+.re-left,
+.re-right {
+    float: left;
+    position: relative;
+    overflow: hidden;
+    padding: 0px 15px;
+}
+
+.re-left {
+    max-width: 33.3%;
+}
+
+.re-right {
+    max-width: 66.6%;
+}
+
+.re-left p:first-of-type,
+.re-right p:first-of-type {
+    font-weight: bold;
+}
+
+resume::before,
+resume::after {
     content: "";
     display: table;
     clear: both;
@@ -152,39 +255,260 @@ a:active {
 
 
 
+
+
+
+
+
+
+
+
+
+/* Page - Projects */
+.gallery-image {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-box {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 400px;
+    width: 500px;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: white;
+}
+
+.gallery-image img {
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+}
+
+.caption {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+.caption {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+    height: 400px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+}
+
+.img-link a {
+    z-index: 100;
+    height: 400px;
+    width: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+    background-color: transparent;
+    color: transparent;
+}
+
+.img-box:hover img {
+    transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.img-box:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+}
+
+.img-box:hover {
+    cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+    font-size: 0.8em;
+}
+
+.opacity-low {
+    opacity: 0.5;
+}
+
+
+/* Responsive layout */
+@media screen and (max-width: 800px) {
+    .img-box {
+        height: 300px;
+        width: 400px;
+    }
+
+    .transparent-box {
+        height: 300px;
+        width: 400px;
+    }
+
+    .img-link a {
+        height: 300px;
+        width: 400px;
+    }
+}
+
+
+/* Responsive layout */
+@media screen and (max-width: 600px) {
+    .img-box {
+        height: 200px;
+        width: 300px;
+    }
+
+    .transparent-box {
+        height: 200px;
+        width: 300px;
+    }
+
+    .img-link a {
+        height: 200px;
+        width: 300px;
+    }
+}
+
+
+.gallery-image::before,
+.gallery-image::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+
+
+
+
+/* Page - Contact */
+.contact {
+    display: inline-block;
+    text-align: center;
+}
+
+.con-item {
+    display: inline-block;
+}
+
+.con-left,
+.con-right {
+    float: left;
+    position: relative;
+    overflow: hidden;
+    padding: 0px 15px;
+}
+
+.con-left {
+    font-weight: bold;
+    text-align: right;
+    max-width: 33.3%;
+}
+
+.con-right {
+    text-align: left;
+    max-width: 66.6%;
+}
+
+contact::before,
+contact::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+
 /* Footer */
 .footer {
-    padding: 20px;
+    margin: 0px 10px;
     text-align: center;
-    background: #2E151B;
-    color: white;
-    margin-top: 20px;
+    overflow: hidden;
+    background-color: transparent;
+    color: #C1B2B6;
+}
+
+.footer a:link,
+.footer a:visited {
+    color: #C1B2B6;
+}
+
+.footer a:hover,
+.footer a:active {
+    color: black;
+}
+
+.logo {
+    display: inline-block;
+    max-width: 2.5em;
+    vertical-align: middle;
+    filter: invert(72%) sepia(12%) saturate(188%) hue-rotate(293deg) brightness(100%) contrast(88%);
 }
 
 
 
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
 
-    .leftcolumn,
-    .rightcolumn {
-        width: 100%;
-        padding: 0;
+
+
+
+/* New Page - Legal */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive layout */
+@media screen and (max-width: 600px) {
+    .nav {
+        position: inherit;
     }
 }
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-    .topnav a {
-        float: none;
-        width: 100%;
-    }
-}
 
 
 
-/* Unordered list, bullets inside */
-ul {
-    list-style-position: inside;
-}
+
+
+
+
+/* Section */
+
+/* Section */
