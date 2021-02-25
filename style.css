@@ -209,6 +209,11 @@ text-align: left;
 padding: 5% 0%;
 }
 
+.container-feature-button#center {
+        text-align: center;
+        }
+
+        
 .container-feature-button p {
 display: inline-block;
 font-weight: bold; 
