@@ -1,110 +1,86 @@
 <!doctype html>
 <html lang="en">
 
-
 <!-- Start of HEAD -->
-
 <head>
+    <!--
+    Home Page / About Page of the Portfolio Project Website
+    Author: Sarah Block
+    Date:   2/26/2021
+
+    Filename: index.html
+   -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://use.typekit.net/xlj8ilg.css" rel="stylesheet">
+    <meta name="keywords" content="sarah, block, portfolio, resume, project" />
+    <title>Sarah Block</title>
     <link href="Files/Logo.svg" rel="icon" type="image/x-icon">
     <link href="style.css" rel="stylesheet">
-    <title>Sarah Block</title>
 </head>
 
 
 <!-- Start of BODY -->
-
 <body>
-    <div class="wrapper-1">
+<div class="wrapper">
+<div class="wrapper-center">
 
-        <!-- Start of HEADER -->
-        <div class="wrapper-stickytop">
-            <header class="container-header">
-                <h1>Sarah Block</h1>
-            </header>
+    <!-- Start of HEADER -->
+    <header>
+        <h1>Sarah Block</h1>
+        <p>Software Developer &#8226; Graphic Designer</p>
+    </header>
 
-            <hr>
 
-            <!-- Start of NAVIGATION -->
-            <nav class="container-nav">
-                <a href="index.html">About</a>
-                <a href="resume.html">Resume</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html">Contact</a>
-            </nav>
+    <!-- Start of NAVIGATION -->
+    <nav>
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Start of SECTION -->
+    <section>
+        <div class="section-text">
         </div>
-
-
-
-
-        <!-- Start of page INTRO -->
-        <div class="wrapper-1t">
-            <div class="wrapper-2">
-                <h1>Want to learn about me?</h1>
-                <p>Well, you're in the right place.</p> 
-                <p>Below is a short summary of my life; my education, my experience, and why I chose the IT field.</p>
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="wrapper-1t">
-            <div class="wrapper-2">
-
-                <div class="container-about">
-                    <div class="container-about-img">
-                        <img src="Files/FaceRound.png">
-                    </div>
-                    <div class="container-about-text">
-                        <h1>Hello, I'm Sarah</h1>
-                        <p>I am a student studying Software Development at Northcentral Technical College.</p>
-                        <p>As someone who grew up surrounded by technology, I have always been interested in learning about
-                            how the devices and programs we use every day are created and maintained.</p>
-                        <br>
-                        <p>Another passion of mine includes graphic design and digital art. Since my early teens, I have
-                            been drawing digitally and have become proficent at utilizing tools such as Photoshop and
-                            Illustrator as a result.</p>
-                        <br>
-                        <p>I am an extremely motivated and hardworking person who one day hopes to create applications,
-                            designs, and artwork people will enjoy!</p>
-                        <div class="container-feature-button">
-                            <p>Looking for more info?</p>
-                            <br>
-                            <a href="resume.html" class="button2">Read my resume</a>
-                            <a href="projects.html" class="button2">Review my Projects</a>
-                        </div>
-    
-                    </div>
+        <!-- Start of ASIDE -->
+            <aside class="col-1-3">
+                    <img src="Files/FaceRound.png" class="imgtext">
+            </aside>
+        
+        <!-- Start of ARTICLE -->
+            <article class="col-2-3">
+                <h2>Hello, I'm Sarah</h2>
+                <p>I am a student studying Software Development at Northcentral Technical College.</p>
+                <p>As someone who grew up surrounded by technology, I have always been interested in learning about
+                    how the devices and programs we use every day are created and maintained.</p>
+                <p>Another passion of mine includes graphic design and digital art. Since my early teens, I have
+                    been drawing digitally and have become proficent at utilizing tools such as Photoshop and
+                    Illustrator as a result.</p>
+                <p>I am an extremely motivated and hardworking person who one day hopes to create applications,
+                    designs, and artwork people will enjoy!</p>
+                <br>
+                <div class="button" style="text-align: center;">
+                    <P>Looking for more info?</P>
+                        <ul>
+                            <li><a href="resume.html">my resume</a></li>
+                            <li><a href="projects.html">my Projects</a></li>
+                            <li><a href="contact.html">my contacts</a></li>
+                        </ul>
                 </div>
+            </article>
+    </section>
 
-            </div>
-        </div>  
-
-
-
-        <div class="wrapper-footer">
-
-            <!-- Start of FOOTER -->
-            <footer class="container-footer">
-                <img src="Files/Logo.svg" alt="logo">
-                Copyright
-                <script>document.write(new Date().getFullYear())</script> &#8226; Sarah Block &#8226; All Rights
-                Reserved
-            </footer>
-
+    <!-- Start of FOOTER -->
+    <footer>
+        <div class="col-1-1" style="text-align: center;">
+        &copy; Copyright 2021 &#8226; Sarah Block &#8226; All Rights Reserved
         </div>
+    </footer>
 
-    </div>
-
-
-
-
-
-
-
+</div>
+</div>
 </body>
-
-
 </html>

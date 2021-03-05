@@ -1,83 +1,101 @@
 <!doctype html>
 <html lang="en">
 
-
 <!-- Start of HEAD -->
-
 <head>
+    <!--
+    Contact Page of the Portfolio Project Website
+    Author: Sarah Block
+    Date:   2/26/2021
+
+    Filename: contact.html
+   -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://use.typekit.net/xlj8ilg.css" rel="stylesheet">
+    <meta name="keywords" content="sarah, block, contact, talk" />
+    <script src="https://kit.fontawesome.com/cd228069a2.js" crossorigin="anonymous"></script>
+    <title>Contact</title>
     <link href="Files/Logo.svg" rel="icon" type="image/x-icon">
     <link href="style.css" rel="stylesheet">
-    <title>Resume</title>
 </head>
 
 
 <!-- Start of BODY -->
-
 <body>
-    <div class="wrapper-1">
+<div class="wrapper">
+<div class="wrapper-center">
 
-        <!-- Start of NAVIGATION + HEADER -->
-        <div class="wrapper-stickytop">
-            <header class="container-header">
-                <h1>Sarah Block</h1>
-            </header>
-            <hr>
-            <nav class="container-nav">
-                <a href="index.html">About</a>
-                <a href="resume.html">Resume</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html">Contact</a>
-            </nav>
+    <!-- Start of HEADER -->
+    <header>
+        <h1>Sarah Block</h1>
+        <p>Software Developer &#8226; Graphic Designer</p>
+    </header>
+
+
+    <!-- Start of NAVIGATION -->
+    <nav>
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Start of SECTION -->
+    <section>
+
+
+        <!-- Start of ARTICLE -->
+            <article class="col-1-2" id="icons">
+                <h2>Contacts</h2>
+                <div class="icons">
+                    <span class="fas fa-envelope"></span></a>
+                    <p>seblockofficial@gmail.com</p>
+                    <br>
+                </div>
+
+                <h2>Socials</h2>
+                <div class="icons-social">
+                    <a href="https://www.linkedin.com/in/sarah-block-2000/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/SEBlock"><i class="fab fa-github-square"></i></a>
+                    <a href="https://codepen.io/seblock"><i class="fab fa-codepen"></i></a>
+                    <a href="https://www.instagram.com/seblockofficial/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/seblockofficial"><i class="fab fa-twitter-square"></i></a>
+                </div>
+
+
+            </article>
+                
+        
+
+            <article class="col-1-2">
+                <h2>Send a Message</h2>
+                <!-- Contact from Formspree (https://formspree.io/library/simple-contact-form/) -->
+                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mvovjzlo" method="post">
+                    <fieldset id="fs-frm-inputs">
+                      <label for="full-name">Name</label>
+                      <input type="text" name="name" id="full-name" placeholder="" required="">
+                      <label for="email-address">Email Address</label>
+                      <input type="email" name="_replyto" id="email-address" placeholder="" required="">
+                      <label for="message">Message</label>
+                      <textarea rows="5" name="message" id="message" placeholder="" required=""></textarea>
+                      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                    </fieldset>
+                    <input type="submit" value="Submit">
+                  </form>
+            </article>
+
+    </section>
+
+    <!-- Start of FOOTER -->
+    <footer>
+        <div class="col-1-1" style="text-align: center;">
+        &copy; Copyright 2021 &#8226; Sarah Block &#8226; All Rights Reserved
         </div>
+    </footer>
 
-        <!-- Start of page INTRO -->
-        <div class="wrapper-1t">
-            <div class="wrapper-2">
-                <h1>Want to talk?</h1>
-                <p>Well, you're in the right place.</p> 
-                <p>Below is all of my contact information, along links to a few other websites I you can follow me on. </p>
-            </div>
-        </div>
-
-        <hr>
-
-
-        <div class="wrapper-1w">
-            <div class="wrapper-2">
-
-                <h2>Contact</h2><br>
-
-                <p>In progress...</p>
-
-            </div>
-        </div>  
-
-
-        <div class="wrapper-footer">
-
-            <!-- Start of FOOTER -->
-            <footer class="container-footer">
-                <img src="Files/Logo.svg" alt="logo">
-                Copyright
-                <script>document.write(new Date().getFullYear())</script> &#8226; Sarah Block &#8226; All Rights
-                Reserved
-            </footer>
-
-        </div>
-
-
-    </div>
-
-
-
-
-
-
-
+</div>
+</div>
 </body>
-
-
 </html>
