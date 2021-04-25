@@ -1,82 +1,111 @@
 <!doctype html>
 <html lang="en">
 
-<!-- Start of HEAD -->
 <head>
     <!--
-    Projects Page of the Portfolio Project Website
+    Page for (Portfolio Project 3 [300 Minutes])
     Author: Sarah Block
-    Date:   2/26/2021
-
-    Filename: projects.html
+    Date:   4/25/2021
+    Filename: index.html
    -->
     <meta charset="utf-8">
-    <meta name="keywords" content="sarah, block, project, work, code" />
     <title>Projects</title>
-    <link href="Files/Logo.svg" rel="icon" type="image/x-icon">
-    <link href="style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 
 
-<!-- Start of BODY -->
+
 <body>
-<div class="wrapper">
-<div class="wrapper-center">
-
-    <!-- Start of HEADER -->
-    <header>
-        <h1>Sarah Block</h1>
-        <p>Software Developer &#8226; Graphic Designer</p>
-    </header>
 
 
-    <!-- Start of NAVIGATION -->
-    <nav>
-        <ul>
-            <li><a href="index.html">About</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+
+<header>
+    <p id="name">Sarah Block</p>
+    <p id="title">Software Developer &#8226; Graphic Designer</p>
+</header>
 
 
-    <!-- Start of SECTION -->
-    <section>
-        <div class="section-text">
-            <h1>What I've Been Working On</h1>
-            <p>Below you can learn more about each project by hovering over them.</p>
+
+<nav>
+
+    <a href="#" id="navicon"><img src="Files/bars-solid.svg"/></a>
+
+    <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+</nav>
+
+
+<article class="project">
+    <div class="span">
+    <h1 class="big bold" style="color: #633a43">See What I've Been Working On!</h1>
+        <p>Below you may learn more about each project.</p>
             <br>
-            <hr>
+        <p>Smaller projects may be found on my 
+        <a href="https://codepen.io/seblock">Codepen</a> profile.</p>
+            <br>
+    </div>
+    <section class="projects">
+        <div class="card">
+            <img src="Files/project (1).png"/>
+            <div class="text">
+                <h2 class="larger center">Portfolio Project 1</h2> 
+                <p class="italic center">March 1st, 2021</p> 
+                <p>HTML only web pages. Project completed for a web design course. Intended purpose
+                    was to produce four html documents with basic html elements such as
+                    head, header, nav, section, article, and aside. 
+                </p>
+            </div>
         </div>
 
-        <div class="col-1-1" id="project-col">
-            
-                <div class="content">
-                <a href="https://github.com/SEBlock/SEBlock.github.io" target="_blank">
-                    <div class="content-overlay"></div>
-                    <img class="content-image" src="Files/project.png">
-                    <div class="content-details fadeIn-bottom">
-                        <h3 class="content-title">Personal Website</h3>
-                        <p class="content-text">Tags: HTML5, CSS3, Web Design</p>
-                    </div>
-                </a>
-                </div>
-            
+        <div class="card">
+            <img src="Files/project (2).png"/>
+            <div class="text">
+                <h2 class="larger center">Portfolio Project 2</h2> 
+                <p class="italic center">March 30th, 2021</p> 
+                <p>HTML with CSS web pages. Project completed for a web design course. Intended purpose
+                    was to produce complete webpages with html and css, based off a wireframe and 
+                    style guide. 
+                </p>
+            </div>
         </div>
 
+        <div class="card">
+            <img src="Files/project (3).png"/>
+            <div class="text">
+                <h2 class="larger center">Portfolio Project 3</h2> 
+                <p class="italic center">April 25st, 2021</p> 
+                <p>HTML with CSS web pages. Project completed for a web design course. Intended purpose
+                    was to alter two previously made webpages to add a contact form and wrap text around images
+                    (this step was completed with flexbox instead of floats). 
+                </p>
+            </div>
+        </div>
     </section>
 
 
 
-    <!-- Start of FOOTER -->
-    <footer>
-        <div class="col-1-1" style="text-align: center;">
-        &copy; Copyright 2021 &#8226; Sarah Block &#8226; All Rights Reserved
-        </div>
-    </footer>
+</article>
 
-</div>
-</div>
+
+
+<footer>
+    <p>&copy; Copyright 2021 &#8226; Sarah Block &#8226; All Rights Reserved</p>
+    <p>
+        <a href="https://codepen.io/seblock"><img src="Files/codepen-brands.svg"/></a>
+        <a href="https://www.instagram.com/seblockofficial/"><img src="Files/instagram-brands.svg"/></a>
+        <a href="https://twitter.com/seblockofficial"><img src="Files/twitter-square-brands.svg"/></a>
+        <a href="https://www.linkedin.com/in/sarah-block-2000/"><img src="Files/linkedin-brands.svg"/></a>
+        <a href="https://github.com/SEBlock"><img src="Files/github-square-brands.svg"/></a>
+    </p>
+</footer>
+
+
+
 </body>
 </html>

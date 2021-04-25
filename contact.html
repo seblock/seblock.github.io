@@ -1,101 +1,132 @@
 <!doctype html>
 <html lang="en">
 
-<!-- Start of HEAD -->
 <head>
     <!--
-    Contact Page of the Portfolio Project Website
+    Page for (Portfolio Project 3 [300 Minutes])
     Author: Sarah Block
-    Date:   2/26/2021
-
-    Filename: contact.html
+    Date:   4/25/2021
+    Filename: index.html
    -->
     <meta charset="utf-8">
-    <meta name="keywords" content="sarah, block, contact, talk" />
-    <script src="https://kit.fontawesome.com/cd228069a2.js" crossorigin="anonymous"></script>
     <title>Contact</title>
-    <link href="Files/Logo.svg" rel="icon" type="image/x-icon">
-    <link href="style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 
 
-<!-- Start of BODY -->
+
 <body>
-<div class="wrapper">
-<div class="wrapper-center">
-
-    <!-- Start of HEADER -->
-    <header>
-        <h1>Sarah Block</h1>
-        <p>Software Developer &#8226; Graphic Designer</p>
-    </header>
 
 
-    <!-- Start of NAVIGATION -->
-    <nav>
-        <ul>
-            <li><a href="index.html">About</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+
+<header>
+    <p id="name">Sarah Block</p>
+    <p id="title">Software Developer &#8226; Graphic Designer</p>
+</header>
 
 
-    <!-- Start of SECTION -->
-    <section>
+
+<nav>
+
+    <a href="#" id="navicon"><img src="Files/bars-solid.svg"/></a>
+
+    <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+</nav>
 
 
-        <!-- Start of ARTICLE -->
-            <article class="col-1-2" id="icons">
-                <h2>Contacts</h2>
-                <div class="icons">
-                    <span class="fas fa-envelope"></span></a>
-                    <p>seblockofficial@gmail.com</p>
-                    <br>
-                </div>
+<article class="contact"> 
+    <div class="text2">
+        <h1 class="big bold">Email</h1>
+        <img src="Files/envelope-solid.svg"/>
+        <br>
+        <p>seblockofficial@gmail.com</p>
+        <br>
+    </div>
 
-                <h2>Socials</h2>
-                <div class="icons-social">
-                    <a href="https://www.linkedin.com/in/sarah-block-2000/"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/SEBlock"><i class="fab fa-github-square"></i></a>
-                    <a href="https://codepen.io/seblock"><i class="fab fa-codepen"></i></a>
-                    <a href="https://www.instagram.com/seblockofficial/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://twitter.com/seblockofficial"><i class="fab fa-twitter-square"></i></a>
-                </div>
-
-
-            </article>
-                
+    <h1 class="big bold">Contact Form</h1>
+    <form>
+        <fieldset id="businessInfo"> 
+            <legend>Business Information</legend>
         
+            <div class="formRow">
+                <label for="name">Company*</label>
+                <input name="custName" id="name" type="text" placeholder="Company name" required/>
+            </div>
 
-            <article class="col-1-2">
-                <h2>Send a Message</h2>
-                <!-- Contact from Formspree (https://formspree.io/library/simple-contact-form/) -->
-                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mvovjzlo" method="post">
-                    <fieldset id="fs-frm-inputs">
-                      <label for="full-name">Name</label>
-                      <input type="text" name="name" id="full-name" placeholder="" required="">
-                      <label for="email-address">Email Address</label>
-                      <input type="email" name="_replyto" id="email-address" placeholder="" required="">
-                      <label for="message">Message</label>
-                      <textarea rows="5" name="message" id="message" placeholder="" required=""></textarea>
-                      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-                    </fieldset>
-                    <input type="submit" value="Submit">
-                  </form>
-            </article>
+            <div class="formRow">
+                <label for="name">First Name*</label>
+                <input name="custName" id="name" type="text" placeholder="First name" required/>
+            </div>
 
-    </section>
+            <div class="formRow">
+                <label for="name">Last Name*</label>
+                <input name="custName" id="name" type="text" placeholder="Last name" required/>
+            </div>
 
-    <!-- Start of FOOTER -->
-    <footer>
-        <div class="col-1-1" style="text-align: center;">
-        &copy; Copyright 2021 &#8226; Sarah Block &#8226; All Rights Reserved
+            <div class="formRow">
+                <label for="city">City</label>
+                <input name="custCity" id="city" type="text" value="Wausau"/>
+            </div>
+
+            <div class="formRow">
+                <label for="state">State</label>
+                <input name="custState" id="state" type="text" value="WI"/>
+            </div>
+
+            <div class="formRow">
+                <label for="zip">Postal code</label>
+                <input name="custZip" id="zip" type="text" placeholder="nnnnn (-nnnn)" pattern="^\d{5}(-\d{4})?$"/>
+            </div>
+
+            <div class="formRow">
+                <label for="phone">Phone number</label>
+                <input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"/>
+            </div>
+
+            <div class="formRow">
+                <label for="mail">E-mail*</label>
+                <input name="custEmail" id="mail" type="email" placeholder="example@example.com" required/>
+            </div>
+            
+            <label for="commBox" class="bold">Comments box</label>
+            <textarea name="custExp" id="commBox" placeholder="comment here..."></textarea>
+
+        </fieldset>
+
+        <div id="buttons">
+            <input type="submit" value="Submit Form"/>
+            <input type="reset" value="Cancel"/>
         </div>
-    </footer>
 
-</div>
-</div>
+    </form>
+
+    <p class="italic center">Form is a work in progress and does not submit anywhere.</p>
+    <p class="italic center">Please contact me through my email</p>
+    <p class="italic center">Thank you</p>
+
+</article>
+
+
+
+<footer>
+    <p>&copy; Copyright 2021 &#8226; Sarah Block &#8226; All Rights Reserved</p>
+    <p>
+        <a href="https://codepen.io/seblock"><img src="Files/codepen-brands.svg"/></a>
+        <a href="https://www.instagram.com/seblockofficial/"><img src="Files/instagram-brands.svg"/></a>
+        <a href="https://twitter.com/seblockofficial"><img src="Files/twitter-square-brands.svg"/></a>
+        <a href="https://www.linkedin.com/in/sarah-block-2000/"><img src="Files/linkedin-brands.svg"/></a>
+        <a href="https://github.com/SEBlock"><img src="Files/github-square-brands.svg"/></a>
+    </p>
+</footer>
+
+
+
 </body>
 </html>
